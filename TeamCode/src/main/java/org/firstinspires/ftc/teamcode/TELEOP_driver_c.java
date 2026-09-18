@@ -118,7 +118,7 @@ public class TELEOP_driver_c extends LinearOpMode {
 
             if (!follower_control) {
                 //---------------------------------MANUAL CONTROL
-                double axial = -gamepad1.left_stick_y; // forward/back
+                double axial = gamepad1.left_stick_y; // forward/back
                 double lateral = gamepad1.left_stick_x; // strafe
                 double yaw = gamepad1.right_stick_x; // turn
 
